@@ -96,3 +96,18 @@ A ball trajectory plot was visually inspected and matched the metric interpretat
 4. Choose one proposal, preregister splits/baselines/budget and run the smallest falsifying experiment.
 
 The durable artifacts support these next steps without implying they have already happened.
+
+## Public course publication — October 9, 2026
+
+- Public source repository: https://github.com/sajal-madan-ds/world-models-research
+- Course website: https://sajal-madan-ds.github.io/world-models-research/
+- Original Markdown remains authoritative; MkDocs renders it through a build hook.
+  The generated site is published separately on `gh-pages`. See `website/README.md`.
+- Strict website build passed; documentation link/code checks passed; PyTorch tests:
+  **9 passed**. Browser checks visited all **12 chapters**, found **123 rendered
+  equations** and **9 rendered diagrams**, and passed search, persistent completion,
+  and mobile-homepage overflow checks with **zero JavaScript runtime errors**.
+- GitHub reports Pages built and public; the live homepage returned **HTTP 200**.
+- This is not a full WCAG audit or exhaustive cross-browser check. No new model
+  training, checkpoint download, or original-paper reproduction was performed
+  during publication. Completion state is local to each browser.

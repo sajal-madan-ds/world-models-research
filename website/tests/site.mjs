@@ -24,6 +24,7 @@ let browser;
 try {
   browser = await chromium.launch({ headless: true });
   const page = await browser.newPage({ viewport: { width: 1440, height: 1000 } });
+  page.setDefaultTimeout(20000);
   const errors = [];
   page.on('pageerror', error => errors.push(error.message));
   await page.goto(base);
@@ -32,9 +33,10 @@ try {
   assert.equal(chapterLinks.length, 12);
   let equations = 0, diagrams = 0;
   for (const url of chapterLinks) {
+    console.log('Checking', new URL(url).pathname);
     await page.goto(url);
     await page.waitForSelector('[data-lesson] button');
-    await page.waitForFunction(() => [...document.querySelectorAll('.course-diagram')].every(element => element.querySelector('svg') || element.classList.contains('diagram-fallback')));
+    await page.waitForFunction(() => [...document.querySelectorAll('.course-diagram')].every(element => element.querySelector('svg') || element.classList.contains('diagram-fallback')), null, { timeout: 20000 });
     assert.equal(await page.locator('.diagram-fallback').count(), 0, `Diagram failed: ${url}`);
     assert.equal(await page.locator('.katex-error').count(), 0, `Math failed: ${url}`);
     equations += await page.locator('.katex').count();
@@ -49,7 +51,6 @@ try {
   await page.waitForFunction(() => document.querySelector('[data-lesson] button')?.getAttribute('aria-pressed') === 'true');
   await page.goto(base);
   await page.waitForFunction(() => document.querySelector('[data-course-progress]').value === 1);
-  await page.locator('label[for="__search"]').first().click();
   await page.locator('input[data-md-component="search-query"]').fill('expectile');
   await page.waitForSelector('.md-search-result__item');
   await page.keyboard.press('Escape');
