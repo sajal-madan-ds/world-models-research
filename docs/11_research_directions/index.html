@@ -1,0 +1,2598 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+        <meta name="description" content="A progressive course from everyday intuition to JEPA, planning, and practical PyTorch research.">
+      
+      
+        <meta name="author" content="Sajal Madan">
+      
+      
+        <link rel="canonical" href="https://sajal-madan-ds.github.io/world-models-research/docs/11_research_directions/">
+      
+      
+        <link rel="prev" href="../10_use_cases/">
+      
+      
+        <link rel="next" href="../12_learning_roadmap/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../../assets/logo.svg">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.7">
+    
+    
+      
+        <title>11 · Research opportunities - World Models Course</title>
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/stylesheets/main.ec1eaa64.min.css">
+      
+        
+        <link rel="stylesheet" href="../../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+    
+    
+      <link rel="stylesheet" href="../../assets/katex/katex.min.css">
+    
+      <link rel="stylesheet" href="../../assets/course.css">
+    
+    <script>__md_scope=new URL("../..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#11-research-opportunities-and-three-feasible-proposals" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+  
+
+<header class="md-header md-header--shadow md-header--lifted" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href="../.." title="World Models Course" class="md-header__button md-logo" aria-label="World Models Course" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            World Models Course
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              11 · Research opportunities
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: light)" data-md-color-scheme="default" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to dark theme"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Switch to dark theme" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="(prefers-color-scheme: dark)" data-md-color-scheme="slate" data-md-color-primary="custom" data-md-color-accent="custom"  aria-label="Switch to light theme"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Switch to light theme" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+        <div class="md-search__suggest" data-md-component="search-suggest"></div>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+      <div class="md-header__source">
+        <a href="https://github.com/sajal-madan-ds/world-models-research" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    View research repository
+  </div>
+</a>
+      </div>
+    
+  </nav>
+  
+    
+      
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../.." class="md-tabs__link">
+          
+  
+  
+  Start here
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../01_world_models_eli5/" class="md-tabs__link">
+          
+  
+  
+  Course
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../../labs/" class="md-tabs__link">
+          
+  
+  
+  Hands-on labs
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../glossary/" class="md-tabs__link">
+          
+  
+  
+  Reference
+
+        </a>
+      </li>
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+    
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href="../.." title="World Models Course" class="md-nav__button md-logo" aria-label="World Models Course" data-md-component="logo">
+      
+  <img src="../../assets/logo.svg" alt="logo">
+
+    </a>
+    World Models Course
+  </label>
+  
+    <div class="md-nav__source">
+      <a href="https://github.com/sajal-madan-ds/world-models-research" title="Go to repository" class="md-source" data-md-component="source">
+  <div class="md-source__icon md-icon">
+    
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512"><!--! Font Awesome Free 7.1.0 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License) Copyright 2025 Fonticons, Inc.--><path d="M173.9 397.4c0 2-2.3 3.6-5.2 3.6-3.3.3-5.6-1.3-5.6-3.6 0-2 2.3-3.6 5.2-3.6 3-.3 5.6 1.3 5.6 3.6m-31.1-4.5c-.7 2 1.3 4.3 4.3 4.9 2.6 1 5.6 0 6.2-2s-1.3-4.3-4.3-5.2c-2.6-.7-5.5.3-6.2 2.3m44.2-1.7c-2.9.7-4.9 2.6-4.6 4.9.3 2 2.9 3.3 5.9 2.6 2.9-.7 4.9-2.6 4.6-4.6-.3-1.9-3-3.2-5.9-2.9M252.8 8C114.1 8 8 113.3 8 252c0 110.9 69.8 205.8 169.5 239.2 12.8 2.3 17.3-5.6 17.3-12.1 0-6.2-.3-40.4-.3-61.4 0 0-70 15-84.7-29.8 0 0-11.4-29.1-27.8-36.6 0 0-22.9-15.7 1.6-15.4 0 0 24.9 2 38.6 25.8 21.9 38.6 58.6 27.5 72.9 20.9 2.3-16 8.8-27.1 16-33.7-55.9-6.2-112.3-14.3-112.3-110.5 0-27.5 7.6-41.3 23.6-58.9-2.6-6.5-11.1-33.3 2.6-67.9 20.9-6.5 69 27 69 27 20-5.6 41.5-8.5 62.8-8.5s42.8 2.9 62.8 8.5c0 0 48.1-33.6 69-27 13.7 34.7 5.2 61.4 2.6 67.9 16 17.7 25.8 31.5 25.8 58.9 0 96.5-58.9 104.2-114.8 110.5 9.2 7.9 17 22.9 17 46.4 0 33.7-.3 75.4-.3 83.6 0 6.5 4.6 14.4 17.3 12.1C436.2 457.8 504 362.9 504 252 504 113.3 391.5 8 252.8 8M105.2 352.9c-1.3 1-1 3.3.7 5.2 1.6 1.6 3.9 2.3 5.2 1 1.3-1 1-3.3-.7-5.2-1.6-1.6-3.9-2.3-5.2-1m-10.8-8.1c-.7 1.3.3 2.9 2.3 3.9 1.6 1 3.6.7 4.3-.7.7-1.3-.3-2.9-2.3-3.9-2-.6-3.6-.3-4.3.7m32.4 35.6c-1.6 1.3-1 4.3 1.3 6.2 2.3 2.3 5.2 2.6 6.5 1 1.3-1.3.7-4.3-1.3-6.2-2.2-2.3-5.2-2.6-6.5-1m-11.4-14.7c-1.6 1-1.6 3.6 0 5.9s4.3 3.3 5.6 2.3c1.6-1.3 1.6-3.9 0-6.2-1.4-2.3-4-3.3-5.6-2"/></svg>
+  </div>
+  <div class="md-source__repository">
+    View research repository
+  </div>
+</a>
+    </div>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_1" id="__nav_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Start here
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Start here
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../.." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Welcome
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../study-plan/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Study plan
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../measured/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Measured experiments
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../lab/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Local setup
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Course
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Course
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_1" id="__nav_2_1_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Foundations
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Foundations
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../01_world_models_eli5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · What is a world model?
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../02_opencv_foundations/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Computer vision refresher
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../03_representation_learning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Representation learning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../04_world_model_taxonomy/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · World-model taxonomy
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Models and planning
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Models and planning
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../05_architectures/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · History and architectures
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../06_jepa_deep_dive/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · JEPA deep dive
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../07_rl_and_planning/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · RL, physics, and planning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../08_models_and_datasets/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Models and datasets
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+          
+          
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_2_3" id="__nav_2_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research practice
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_2_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Research practice
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../09_training_and_inference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Training and evaluation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../10_use_cases/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    10 · Applications
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 · Research opportunities
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    11 · Research opportunities
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fifteen-candidate-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fifteen candidate studies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fifteen candidate studies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-value-shaped-geometry-under-stochastic-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Value-shaped geometry under stochastic dynamics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-partial-observability-and-minimal-temporal-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Partial observability and minimal temporal context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-compact-latent-capacity-under-task-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Compact latent capacity under task changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-action-timestamps-as-a-hidden-source-of-world-model-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Action timestamps as a hidden source of world-model failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ensemble-uncertainty-that-improves-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ensemble uncertainty that improves decisions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-multi-step-training-versus-short-horizon-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Multi-step training versus short-horizon accuracy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-object-centered-versus-patch-centered-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Object-centered versus patch-centered state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-physical-consistency-without-overconstraining-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Physical consistency without overconstraining representation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-representation-drift-during-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Representation drift during fine-tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-planner-robustness-to-latent-rescaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Planner robustness to latent rescaling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-distill-video-representations-for-domain-local-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Distill video representations for domain-local planning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-language-selected-costs-with-shared-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Language-selected costs with shared dynamics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-passive-video-transfer-with-a-small-action-calibration-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Passive video transfer with a small action-calibration set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-synthetic-to-real-failure-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Synthetic-to-real failure taxonomy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-prediction-under-a-real-time-planning-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Prediction under a real-time planning budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ranking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ranking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-concrete-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three concrete projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three concrete projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-a-actionobservation-alignment-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project A: action–observation alignment benchmark
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-b-stochastic-value-guided-jepa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project B: stochastic value-guided JEPA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-c-planning-geometry-under-scaling-and-compute-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project C: planning geometry under scaling and compute limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../12_learning_roadmap/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    12 · Twelve-week roadmap
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Hands-on labs
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Hands-on labs
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../labs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Overview
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/01_opencv_motion/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    01 · Track motion
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/02_bouncing_ball/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    02 · Bouncing ball
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/03_neural_dynamics/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    03 · Neural dynamics
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/04_latent_world_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    04 · Latent world model
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/05_mini_jepa/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    05 · Mini-JEPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/06_vjepa_inference/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    06 · Pretrained V-JEPA
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/07_model_based_rl/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    07 · Model-based control
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/08_action_conditioned_model/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    08 · Action conditioning
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../experiments/09_research_replication/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    09 · Paper adaptation
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+        
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_4" >
+        
+          
+          <label class="md-nav__link" for="__nav_4" id="__nav_4_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Reference
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_4_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_4">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    Reference
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../glossary/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Glossary and FAQ
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../references/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Source index
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/VERIFICATION/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Verification report
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/PROGRESS/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Project progress
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../../research/OUTLINE/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    Research outline
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#fifteen-candidate-studies" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Fifteen candidate studies
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Fifteen candidate studies">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-value-shaped-geometry-under-stochastic-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. Value-shaped geometry under stochastic dynamics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-partial-observability-and-minimal-temporal-context" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. Partial observability and minimal temporal context
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-compact-latent-capacity-under-task-changes" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. Compact latent capacity under task changes
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-action-timestamps-as-a-hidden-source-of-world-model-failure" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. Action timestamps as a hidden source of world-model failure
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-ensemble-uncertainty-that-improves-decisions" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. Ensemble uncertainty that improves decisions
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6-multi-step-training-versus-short-horizon-accuracy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. Multi-step training versus short-horizon accuracy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7-object-centered-versus-patch-centered-state" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. Object-centered versus patch-centered state
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8-physical-consistency-without-overconstraining-representation" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. Physical consistency without overconstraining representation
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9-representation-drift-during-fine-tuning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. Representation drift during fine-tuning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#10-planner-robustness-to-latent-rescaling" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        10. Planner robustness to latent rescaling
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#11-distill-video-representations-for-domain-local-planning" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        11. Distill video representations for domain-local planning
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#12-language-selected-costs-with-shared-dynamics" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        12. Language-selected costs with shared dynamics
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#13-passive-video-transfer-with-a-small-action-calibration-set" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        13. Passive video transfer with a small action-calibration set
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#14-synthetic-to-real-failure-taxonomy" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        14. Synthetic-to-real failure taxonomy
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#15-prediction-under-a-real-time-planning-budget" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        15. Prediction under a real-time planning budget
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#ranking" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Ranking
+      
+    </span>
+  </a>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#three-concrete-projects" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Three concrete projects
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="Three concrete projects">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#project-a-actionobservation-alignment-benchmark" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project A: action–observation alignment benchmark
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-b-stochastic-value-guided-jepa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project B: stochastic value-guided JEPA
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#project-c-planning-geometry-under-scaling-and-compute-limits" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        Project C: planning geometry under scaling and compute limits
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+  
+  
+
+
+<h1 id="11-research-opportunities-and-three-feasible-proposals">11. Research opportunities and three feasible proposals<a class="headerlink" href="#11-research-opportunities-and-three-feasible-proposals" title="Permanent link">&para;</a></h1>
+<section class="lesson-tools" data-lesson="11" aria-label="Chapter study tools"><span>Chapter 11 / 12 · About 14 min to read</span><button type="button" aria-pressed="false">Mark chapter complete</button><span class="lesson-status" role="status" aria-live="polite"></span></section>
+
+<p>Previous: <a href="../10_use_cases/">applications</a>. Next: <a href="../12_learning_roadmap/">roadmap</a>.</p>
+<p>These are investigated <strong>hypotheses</strong>, not declarations of novelty. The live search found significant overlapping 2026 work. In particular, temporal-cost learning already appears in <a href="https://arxiv.org/abs/2607.25337">TD-JEPA</a>; rollout/physics consistency in <a href="https://arxiv.org/abs/2609.10464">Semigroup-JEPA</a>; compact prefixes in <a href="https://arxiv.org/abs/2609.32921">Adaptive Latent Capacity</a>; video-action integration in <a href="https://arxiv.org/abs/2609.37250">V-JEPA Policy</a> and <a href="https://arxiv.org/abs/2606.04463">OSCAR</a>. Search records for some of these are not full-paper reviews. Read and rerun the closest work before any novelty claim.</p>
+<p>The gaps below identify tests not established by this survey, not proof nobody has done them. Compute estimates are proposed budget caps, not measured training requirements. All experiments should begin with three seeds and independently held-out episodes, then increase seeds/evaluations if the pilot justifies it.</p>
+<h2 id="fifteen-candidate-studies">Fifteen candidate studies<a class="headerlink" href="#fifteen-candidate-studies" title="Permanent link">&para;</a></h2>
+<h3 id="1-value-shaped-geometry-under-stochastic-dynamics">1. Value-shaped geometry under stochastic dynamics<a class="headerlink" href="#1-value-shaped-geometry-under-stochastic-dynamics" title="Permanent link">&para;</a></h3>
+<p><strong>Question/motivation:</strong> does goal-distance shaping remain useful when transitions are random? Closest work: <a href="https://arxiv.org/abs/2601.00844">value-guided JEPA</a>, <a href="https://arxiv.org/abs/2607.25337">TD-JEPA</a>. Gap to investigate: controlled observation/action uncertainty rather than only average deterministic success.</p>
+<p><strong>Hypothesis:</strong> value learning improves reachable-goal ranking at low noise but becomes optimistically biased at high noise. <strong>Experiment/model/data:</strong> extend the wall grid to stochastic actions and slippery regions, compare prediction-only encoder, Euclidean VF, separate learned cost, and oracle stochastic planner. <strong>Ablations:</strong> noise type, <span class="arithmatex">\(\tau,\gamma\)</span>, coverage, mean versus distributional targets. <strong>Metrics:</strong> success, expected cost, Bellman residual, calibration, failure tails. <strong>Compute:</strong> CPU pilot, optional one GPU, proposed ≤8 GPU-hours. <strong>Risk/falsification:</strong> no consistent noise-dependent effect or equal degradation across objectives rejects the hypothesis. <strong>Contribution:</strong> reproducible robustness benchmark or workshop negative result.</p>
+<h3 id="2-partial-observability-and-minimal-temporal-context">2. Partial observability and minimal temporal context<a class="headerlink" href="#2-partial-observability-and-minimal-temporal-context" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> how much visual history is necessary? Closest work: V-JEPA 2 and RSSM/PlaNet. <strong>Gap:</strong> controlled context-versus-state-sufficiency curves. <strong>Hypothesis:</strong> ordered short history improves velocity identification more than added encoder width.</p>
+<p><strong>Experiment:</strong> balls with occlusion and visually identical opposing velocities; CNN/GRU histories of 1/2/4/8 frames. <strong>Data:</strong> synthetic first, then small Push-T subset after terms review. <strong>Baseline:</strong> single-frame encoder, explicit tracked state, same-capacity shuffled-history control. <strong>Ablations:</strong> order, frame stride, occlusion length, proprioception. <strong>Metrics:</strong> velocity probe, rollout error, planning success, compute. <strong>Budget:</strong> CPU pilot; ≤10 single-GPU hours proposed. <strong>Risk/falsification:</strong> gains disappear with capacity matching or correlate only with image quality. <strong>Contribution:</strong> clear ablation report and dataset generator; broad idea is established, scope is diagnostic.</p>
+<h3 id="3-compact-latent-capacity-under-task-changes">3. Compact latent capacity under task changes<a class="headerlink" href="#3-compact-latent-capacity-under-task-changes" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> can a small code remain useful across new goals? Closest: DINO-WM, Adaptive Latent Capacity, LeWorldModel. <strong>Gap:</strong> task-change failure of aggressively compressed features. <strong>Hypothesis:</strong> prefixes retain easy position tasks but lose hidden dynamics needed under changed goals.</p>
+<p><strong>Experiment/model:</strong> 8/16/32/64 codes with matched decoder/predictor budget; optional frozen ViT patch pooling. <strong>Data:</strong> synthetic physics, selected simulator trajectories. <strong>Baseline:</strong> full code and PCA compression. <strong>Ablations:</strong> width, prefix training, pooling, task-specific versus general representation. <strong>Metrics:</strong> state probes, unseen-goal planning, rank, latency. <strong>Budget:</strong> CPU to ≤20 single-GPU hours. <strong>Risk/falsification:</strong> all small-code gains explained by regularization or goals preserve performance. <strong>Contribution:</strong> capacity benchmark; not a new claim that compact latents are possible.</p>
+<h3 id="4-action-timestamps-as-a-hidden-source-of-world-model-failure">4. Action timestamps as a hidden source of world-model failure<a class="headerlink" href="#4-action-timestamps-as-a-hidden-source-of-world-model-failure" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> how damaging is action–frame misalignment? Closest: JEPA-WMs and robot action-conditioned models. <strong>Gap:</strong> explicit latency sensitivity and cheap correction evaluation.</p>
+<p><strong>Hypothesis:</strong> small offsets can hurt planning more than one-step image metrics reveal. <strong>Experiment:</strong> introduce offsets/jitter to synthetic control, then approved BridgeData subset. <strong>Model:</strong> frozen encoder + small temporal predictor; compare calibrated offset, learned delay, and uncorrected. <strong>Baselines:</strong> true aligned model, action-blind, state model. <strong>Ablations:</strong> delay, sampling frequency, action interpolation, predictor width. <strong>Metrics:</strong> rollout error, success, inferred delay, latency. <strong>Budget:</strong> CPU, then ≤12 GPU-hours. <strong>Risk/falsification:</strong> comparable control despite offset or correction overfits validation. <strong>Contribution:</strong> alignment diagnostic tool and benchmark.</p>
+<h3 id="5-ensemble-uncertainty-that-improves-decisions">5. Ensemble uncertainty that improves decisions<a class="headerlink" href="#5-ensemble-uncertainty-that-improves-decisions" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> does uncertainty predict model exploitation? Closest: <a href="https://arxiv.org/abs/2310.16828">TD-MPC2</a>, model-based ensemble literature. <strong>Gap:</strong> calibration under structured physics shift in compact latent models.</p>
+<p><strong>Hypothesis:</strong> ensemble penalties reduce severe failures on unseen friction, at a measurable nominal-success cost. <strong>Experiment:</strong> 3–5 predictors with fixed total training budget; deterministic versus stochastic heads; held-out dynamics. <strong>Data:</strong> ball/control/ManiSkill trajectories. <strong>Baseline:</strong> no penalty, fixed conservative penalty, oracle uncertainty. <strong>Ablations:</strong> independent seeds versus bootstrap data, coefficient, training support. <strong>Metrics:</strong> error–uncertainty rank correlation, coverage, success, tail cost. <strong>Budget:</strong> ≤20 GPU-hours after CPU pilot. <strong>Risk/falsification:</strong> confident shared failures or no tail improvement. <strong>Contribution:</strong> calibration study, not universal uncertainty guarantees.</p>
+<h3 id="6-multi-step-training-versus-short-horizon-accuracy">6. Multi-step training versus short-horizon accuracy<a class="headerlink" href="#6-multi-step-training-versus-short-horizon-accuracy" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> does rollout training help planning beyond fitting one step? Closest: Semigroup-JEPA, PlaNet, TD-JEPA. <strong>Gap:</strong> matched-compute, matched-representation comparison.</p>
+<p><strong>Hypothesis:</strong> multi-step losses improve free rollouts at the cost of some local accuracy. <strong>Experiment:</strong> train 1/4/8/16-step losses on fixed episodes; frozen versus jointly trained encoder. <strong>Baseline:</strong> one-step, scheduled input corruption, analytical model. <strong>Ablations:</strong> target stop-gradient, rollout weighting, horizon curriculum. <strong>Metrics:</strong> horizon error, probe, success, stability. <strong>Data/model:</strong> synthetic history encoder/predictor, then selected Push-T. <strong>Budget:</strong> ≤16 GPU-hours proposed. <strong>Risk/falsification:</strong> improvement vanishes under equal updates/FLOPs. <strong>Contribution:</strong> reproducibility and ablation report; overlap is substantial.</p>
+<h3 id="7-object-centered-versus-patch-centered-state">7. Object-centered versus patch-centered state<a class="headerlink" href="#7-object-centered-versus-patch-centered-state" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> do tracked objects reduce long-horizon drift? Closest: dense DINO-WM and object-centric modeling. <strong>Gap:</strong> same-data/control-budget comparison with explicit tracking errors.</p>
+<p><strong>Hypothesis:</strong> object states generalize to rearrangements better but fail under occlusion/association mistakes. <strong>Experiment:</strong> multiple balls/blocks, tracked masks versus dense CNN patches. <strong>Baseline:</strong> pooled code and oracle object states. <strong>Ablations:</strong> tracking noise, object count, relational interactions. <strong>Metrics:</strong> identity switches, interaction errors, success, compute. <strong>Budget:</strong> ≤24 GPU-hours. <strong>Risk/falsification:</strong> oracle benefit disappears or tracker destroys gains. <strong>Contribution:</strong> diagnostic object-interaction dataset.</p>
+<h3 id="8-physical-consistency-without-overconstraining-representation">8. Physical consistency without overconstraining representation<a class="headerlink" href="#8-physical-consistency-without-overconstraining-representation" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> can a small auxiliary state head improve conservation? Closest: Semigroup-JEPA and physics-informed learning. <strong>Gap:</strong> when conservation penalties conflict with contact/energy loss.</p>
+<p><strong>Hypothesis:</strong> appropriate invariants improve elastic motion while wrong invariants harm dissipative motion. <strong>Experiment:</strong> train state-readout conservation penalty on elastic/inelastic mixed data. <strong>Baseline:</strong> no penalty, oracle supervised states, random auxiliary task. <strong>Ablations:</strong> penalty strength, head capacity, known versus inferred parameters. <strong>Metrics:</strong> energy drift, rollout error, control, unseen physics. <strong>Budget:</strong> CPU pilot / ≤16 GPU-hours. <strong>Risk/falsification:</strong> gains only from extra labels or violated laws in contacts. <strong>Contribution:</strong> explicit boundary-of-applicability study.</p>
+<h3 id="9-representation-drift-during-fine-tuning">9. Representation drift during fine-tuning<a class="headerlink" href="#9-representation-drift-during-fine-tuning" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> does moving the encoder invalidate a predictor? Closest: V-JEPA adaptation and JEPA-WMs. <strong>Gap:</strong> quantified alignment drift versus control deterioration.</p>
+<p><strong>Hypothesis:</strong> a learned alignment adapter recovers predictor usefulness with fewer updates than joint retraining. <strong>Experiment:</strong> freeze/train/fine-tune phases with recorded embeddings; fit linear/MLP alignment. <strong>Data:</strong> synthetic shifts, approved visual dataset. <strong>Baseline:</strong> frozen encoder, full retrain, no alignment. <strong>Ablations:</strong> teacher momentum, LoRA versus full updates if supported, adapter capacity. <strong>Metrics:</strong> drift, latent prediction, probe, planning, update cost. <strong>Budget:</strong> ≤20 GPU-hours. <strong>Risk/falsification:</strong> adapter cannot preserve task state or gains vanish against retrained predictor. <strong>Contribution:</strong> fine-tuning diagnostic package.</p>
+<h3 id="10-planner-robustness-to-latent-rescaling">10. Planner robustness to latent rescaling<a class="headerlink" href="#10-planner-robustness-to-latent-rescaling" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> are planning comparisons confounded by arbitrary code scale? Closest: value-guided JEPA and latent MPC. <strong>Gap:</strong> optimizer-temperature/cost-scale sensitivity.</p>
+<p><strong>Hypothesis:</strong> identical representations scaled differently alter MPPI/CEM behavior despite unchanged state information. <strong>Experiment:</strong> rescale/whiten fixed codes; tune optimizer separately and compare locked defaults. <strong>Data:</strong> wall and point control; later published checkpoint. <strong>Baseline:</strong> normalized distance, known-state planner. <strong>Ablations:</strong> code scale, covariance anisotropy, horizon, temperature. <strong>Metrics:</strong> success, cost ranking, optimizer convergence. <strong>Budget:</strong> CPU / ≤4 GPU-hours. <strong>Risk/falsification:</strong> properly normalized/tuned optimizers eliminate every effect. <strong>Contribution:</strong> evaluation hygiene/negative-result note.</p>
+<h3 id="11-distill-video-representations-for-domain-local-planning">11. Distill video representations for domain-local planning<a class="headerlink" href="#11-distill-video-representations-for-domain-local-planning" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> can a tiny student preserve task behavior? Closest: V-JEPA dense features and model distillation. <strong>Gap:</strong> preservation of planning utility rather than classification alone.</p>
+<p><strong>Hypothesis:</strong> trajectory-aware distillation outperforms frame-only matching under a fixed student size. <strong>Experiment:</strong> cache approved teacher features; train CNN student plus predictor. <strong>Data:</strong> short robot/synthetic videos. <strong>Baseline:</strong> random student, frame distillation, teacher planner. <strong>Ablations:</strong> temporal loss, pooling, width, action data. <strong>Metrics:</strong> teacher feature match, rollout, success, latency. <strong>Budget:</strong> ≤24 GPU-hours plus teacher extraction after download approval. <strong>Risk/falsification:</strong> success falls despite feature matching. <strong>Contribution:</strong> efficient task-specific encoder; novelty requires focused search.</p>
+<h3 id="12-language-selected-costs-with-shared-dynamics">12. Language-selected costs with shared dynamics<a class="headerlink" href="#12-language-selected-costs-with-shared-dynamics" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> can language change goals without destabilizing dynamics? Closest: V-JEPA Policy and world-action models. <strong>Gap:</strong> separation of task instruction from transition prediction.</p>
+<p><strong>Hypothesis:</strong> a shared dynamics model plus language-conditioned cost transfers better than entangling instructions into transitions for fixed physics. <strong>Experiment:</strong> same scenes with “move left/right/avoid red” goals. <strong>Baseline:</strong> separate predictors, goal-vector planner, reactive policy. <strong>Ablations:</strong> instruction paraphrases, irrelevant language, seen/unseen goals. <strong>Metrics:</strong> success, dynamics invariance, language generalization. <strong>Budget:</strong> ≤24 GPU-hours with small existing text encoder. <strong>Risk/falsification:</strong> language merely indexes memorized tasks. <strong>Contribution:</strong> factorization study, not a general language-world-model invention.</p>
+<h3 id="13-passive-video-transfer-with-a-small-action-calibration-set">13. Passive video transfer with a small action-calibration set<a class="headerlink" href="#13-passive-video-transfer-with-a-small-action-calibration-set" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> how much action data grounds a passive encoder? Closest: V-JEPA 2-AC, V-JEPA Policy, OSCAR. <strong>Gap:</strong> controlled data-efficiency curves under viewpoint/embodiment shift.</p>
+<p><strong>Hypothesis:</strong> passive pretraining helps perception but action calibration remains necessary. <strong>Experiment:</strong> freeze encoder and train predictors on 1/5/20/100% action data. <strong>Baseline:</strong> random encoder, supervised state, full fine-tune. <strong>Ablations:</strong> view shift, action range, temporal stride. <strong>Metrics:</strong> sample-efficiency curves, held-out action predictions, success. <strong>Data:</strong> simulator paired with passive renderings; later robot subset. <strong>Budget:</strong> ≤40 GPU-hours. <strong>Risk/falsification:</strong> frozen encoder omits relevant state or benefit disappears with matched pretraining data. <strong>Contribution:</strong> careful transfer evidence.</p>
+<h3 id="14-synthetic-to-real-failure-taxonomy">14. Synthetic-to-real failure taxonomy<a class="headerlink" href="#14-synthetic-to-real-failure-taxonomy" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> which domain differences actually harm control? Closest: Cosmos/OSCAR and domain randomization. <strong>Gap:</strong> factor-wise attribution instead of aggregate transfer score.</p>
+<p><strong>Hypothesis:</strong> camera/action calibration causes greater failures than texture shift for compact latent control. <strong>Experiment:</strong> vary texture, viewpoint, scale, physics, delay independently. <strong>Baseline:</strong> classical state tracker and oracle state predictor. <strong>Ablations:</strong> single versus combined shifts, adaptation labels. <strong>Metrics:</strong> prediction, state probe, success, calibration. <strong>Data:</strong> approved real subset plus simulator counterparts. <strong>Budget:</strong> ≤40 GPU-hours; real collection not assumed. <strong>Risk/falsification:</strong> factors cannot be independently controlled or texture dominates. <strong>Contribution:</strong> evaluation dataset and diagnostics.</p>
+<h3 id="15-prediction-under-a-real-time-planning-budget">15. Prediction under a real-time planning budget<a class="headerlink" href="#15-prediction-under-a-real-time-planning-budget" title="Permanent link">&para;</a></h3>
+<p><strong>Question:</strong> when is a larger model worse because it misses the control deadline? Closest: JEPA-WMs search and training-only imagination in LeRobot. <strong>Gap:</strong> matched end-to-end time rather than candidate-count comparison.</p>
+<p><strong>Hypothesis:</strong> compact predictors plus frequent feedback outperform slower, more accurate predictors on rapidly changing tasks. <strong>Experiment:</strong> sweep model size, horizon, candidate count, and delayed actuation in a timed simulator. <strong>Baseline:</strong> PD, fixed-budget MPC, reactive distilled policy. <strong>Ablations:</strong> precomputed features, batching, stale observations, uncertainty. <strong>Metrics:</strong> p50/p95 latency, deadline misses, success, memory. <strong>Budget:</strong> CPU timer pilot / ≤16 GPU-hours. <strong>Risk/falsification:</strong> all gains explained by simulator scheduling or faster models lose too much accuracy. <strong>Contribution:</strong> timing-aware benchmark.</p>
+<h2 id="ranking">Ranking<a class="headerlink" href="#ranking" title="Permanent link">&para;</a></h2>
+<p>Scores are mentor judgments, not evidence of novelty. F: feasibility, N: potential incremental novelty, S: scientific importance, D: data accessibility, C: compute affordability, I: implementation ease, U: usefulness; 5 is favorable, 1 unfavorable. Totals use equal weighting for transparency.</p>
+<table>
+<thead>
+<tr>
+<th>#</th>
+<th style="text-align: right;">F</th>
+<th style="text-align: right;">N</th>
+<th style="text-align: right;">S</th>
+<th style="text-align: right;">D</th>
+<th style="text-align: right;">C</th>
+<th style="text-align: right;">I</th>
+<th style="text-align: right;">U</th>
+<th style="text-align: right;">Total</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>1</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td>2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">31</td>
+</tr>
+<tr>
+<td>3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">27</td>
+</tr>
+<tr>
+<td>4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">33</td>
+</tr>
+<tr>
+<td>5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">29</td>
+</tr>
+<tr>
+<td>6</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">30</td>
+</tr>
+<tr>
+<td>7</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td>8</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">26</td>
+</tr>
+<tr>
+<td>9</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">28</td>
+</tr>
+<tr>
+<td>10</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">32</td>
+</tr>
+<tr>
+<td>11</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">25</td>
+</tr>
+<tr>
+<td>12</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td>13</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">24</td>
+</tr>
+<tr>
+<td>14</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">2</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">23</td>
+</tr>
+<tr>
+<td>15</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">3</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">4</td>
+<td style="text-align: right;">5</td>
+<td style="text-align: right;">31</td>
+</tr>
+</tbody>
+</table>
+<p>Five strongest under your current background: <strong>4, 1, 10, 2, 15</strong>. The numerical tie between 2 and 15 favors 2 for a first experiment and 15 for engineering relevance. None requires inventing a foundation model.</p>
+<h2 id="three-concrete-projects">Three concrete projects<a class="headerlink" href="#three-concrete-projects" title="Permanent link">&para;</a></h2>
+<h3 id="project-a-actionobservation-alignment-benchmark">Project A: action–observation alignment benchmark<a class="headerlink" href="#project-a-actionobservation-alignment-benchmark" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> action timing is often hidden inside preprocessing; incorrect alignment can corrupt a learned transition. <strong>Literature:</strong> JEPA-WMs, V-JEPA 2-AC, and robot datasets establish action-conditioned training but do not establish the exact latency robustness curve we need.</p>
+<p><strong>Hypothesis:</strong> correcting alignment improves downstream planning more than expanding a small predictor. <strong>Implementation:</strong> extend experiment 08 with known timestamp shifts and jitter; add parameterized action delay to data generation; train aligned, shifted, action-blind, and learned-delay models. After synthetic validation, use a licensed BridgeData subset without collecting new robot data.</p>
+<p><strong>Evaluation:</strong> hold episodes/scenes fixed; five training seeds; shifts 0/1/2/4 frames; equal update budget; compare rollout MSE and goal success. Use a dummy-action capacity control. <strong>Resources:</strong> local CPU initial study, optional single L40S/H100; proposed ≤12 GPU-hours, storage constrained to a selected subset.</p>
+<p><strong>Success:</strong> a reproducible offset-effect curve and correction benefit across seeds and held-out scenes. <strong>Failure:</strong> no meaningful effect, or correction only helps training scenes. Either outcome can support a useful tool/report. Deliver generator, diagnostic plots, configs, and a documented data-schema adapter.</p>
+<h3 id="project-b-stochastic-value-guided-jepa">Project B: stochastic value-guided JEPA<a class="headerlink" href="#project-b-stochastic-value-guided-jepa" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> deterministic goal-distance success may conceal optimistic bias under uncertain transitions. <strong>Literature:</strong> 2601.00844 explicitly motivates value-shaped codes and discusses stochastic bias; TD-JEPA already studies task-aware temporal costs.</p>
+<p><strong>Hypothesis:</strong> expectile value shaping improves deterministic paths but needs uncertainty-aware targets to avoid low-probability shortcuts. <strong>Implementation:</strong> replace fixed grid transitions with stochastic kernels, retain a known-model oracle, then move from one-hot to rendered observations. Compare standard prediction/VCReg, Euclidean VF, joint VF+prediction, and an uncertainty-aware cost. Do not call it a reproduction until official observation, data, and planner settings are matched.</p>
+<p><strong>Evaluation:</strong> five seeds, 200 fixed start–goal pairs per noise level, separate layouts, success/expected steps/tail risk/calibration. Sweep <span class="arithmatex">\(\tau,\gamma\)</span> only on validation. <strong>Resources:</strong> CPU first; proposed ≤8 GPU-hours for CNN extension.</p>
+<p><strong>Success:</strong> controlled evidence of the noise-dependent mechanism plus an intervention that improves expected outcomes. <strong>Failure:</strong> bias does not explain failures or uncertainty correction offers no gain. Deliver a transparent benchmark and scoped conclusions, not a universal JEPA claim.</p>
+<h3 id="project-c-planning-geometry-under-scaling-and-compute-limits">Project C: planning geometry under scaling and compute limits<a class="headerlink" href="#project-c-planning-geometry-under-scaling-and-compute-limits" title="Permanent link">&para;</a></h3>
+<p><strong>Problem:</strong> latent cost scale and optimizer settings can distort comparisons. <strong>Literature:</strong> DINO-WM/JEPA-WMs plan in learned feature spaces; value-guided work deliberately shapes geometry.</p>
+<p><strong>Hypothesis:</strong> scale changes affect locked-parameter planners but properly normalized, retuned costs reduce those differences; control delay creates an independent model-size trade-off. <strong>Implementation:</strong> retain fixed representations, rescale/whiten them, compare CEM and a documented MPPI implementation at equal wall-clock budget. Add a simulated actuation delay and measure feature extraction separately.</p>
+<p><strong>Evaluation:</strong> rank consistency, planning success, p95 end-to-end latency, deadline misses, candidate count, and physical rollout error; exact same starts/goals and three-to-five seeds. <strong>Resources:</strong> CPU with current toy models; optional one GPU for cached pretrained features; proposed ≤16 GPU-hours.</p>
+<p><strong>Success:</strong> an independently reproducible sensitivity analysis and budget-aware recommendation. <strong>Failure:</strong> effects vanish once every planner is normalized/tuned. That falsifies the broad claim and supports evaluation guidance. Deliver a benchmark harness and tutorial contribution.</p>
+<p>Before submitting any of these, expand the literature search to references/citations of the closest paper, confirm code availability and licenses, and narrow the contribution around a tested gap.</p>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+          <button type="button" class="md-top md-icon" data-md-component="top" hidden>
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M13 20h-2V8l-5.5 5.5-1.42-1.42L12 4.16l7.92 7.92-1.42 1.42L13 8z"/></svg>
+  Back to top
+</button>
+        
+      </main>
+      
+        <footer class="md-footer">
+  
+    
+      
+      <nav class="md-footer__inner md-grid" aria-label="Footer" >
+        
+          
+          <a href="../10_use_cases/" class="md-footer__link md-footer__link--prev" aria-label="Previous: 10 · Applications">
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+            </div>
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Previous
+              </span>
+              <div class="md-ellipsis">
+                10 · Applications
+              </div>
+            </div>
+          </a>
+        
+        
+          
+          <a href="../12_learning_roadmap/" class="md-footer__link md-footer__link--next" aria-label="Next: 12 · Twelve-week roadmap">
+            <div class="md-footer__title">
+              <span class="md-footer__direction">
+                Next
+              </span>
+              <div class="md-ellipsis">
+                12 · Twelve-week roadmap
+              </div>
+            </div>
+            <div class="md-footer__button md-icon">
+              
+              <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M4 11v2h12l-5.5 5.5 1.42 1.42L19.84 12l-7.92-7.92L10.5 5.5 16 11z"/></svg>
+            </div>
+          </a>
+        
+      </nav>
+    
+  
+  <div class="md-footer-meta md-typeset">
+    <div class="md-footer-meta__inner md-grid">
+      <div class="md-copyright">
+  
+  
+    Made with
+    <a href="https://squidfunk.github.io/mkdocs-material/" target="_blank" rel="noopener">
+      Material for MkDocs
+    </a>
+  
+</div>
+      
+    </div>
+  </div>
+</footer>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "../..", "features": ["navigation.tabs", "navigation.tabs.sticky", "navigation.sections", "navigation.footer", "navigation.top", "toc.follow", "search.highlight", "search.suggest", "content.code.copy"], "search": "../../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../../assets/javascripts/bundle.d7400e89.min.js"></script>
+      
+        <script src="../../assets/runtime.js" type="module"></script>
+      
+    
+  </body>
+</html>

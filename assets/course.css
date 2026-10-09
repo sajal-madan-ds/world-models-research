@@ -1,0 +1,42 @@
+:root { --md-primary-fg-color: #0f766e; --md-accent-fg-color: #0f766e; }
+[data-md-color-scheme="default"] { --md-default-bg-color: #fbfcfc; }
+[data-md-color-scheme="slate"] { --md-primary-fg-color: #115e59; --md-accent-fg-color: #5eead4; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif; }
+.md-typeset { font-size: .84rem; line-height: 1.8; }
+.md-typeset h1, .md-typeset h2, .md-typeset h3 { font-weight: 650; text-wrap: balance; }
+.md-typeset h1 { color: var(--md-default-fg-color); line-height: 1.2; }
+.md-typeset p { text-wrap: pretty; }
+.md-typeset pre, .md-typeset code { font-family: ui-monospace, SFMono-Regular, Menlo, Consolas, monospace; }
+.md-typeset table:not([class]) { font-size: .72rem; }
+.md-typeset table:not([class]) th { white-space: normal; }
+.md-grid { max-width: 76rem; }
+.md-typeset .hero { padding: 1.25rem 0 1.5rem; max-width: 42rem; }
+.md-typeset .eyebrow { font-size: .66rem; text-transform: uppercase; font-weight: 700; color: var(--md-accent-fg-color); }
+.md-typeset .hero h1 { font-size: clamp(2rem, 4vw, 3rem); margin: .4rem 0 1rem; }
+.md-typeset .hero .lead { font-size: 1rem; line-height: 1.65; color: var(--md-default-fg-color--light); }
+.course-actions { display: flex; flex-wrap: wrap; gap: .6rem; margin: 1.2rem 0; }
+.course-actions .md-button { border-radius: .4rem; }
+.course-stats { display: flex; flex-wrap: wrap; gap: 1.4rem; border-top: 1px solid var(--md-default-fg-color--lightest); padding-top: 1rem; font-size: .75rem; }
+.course-stats strong { display: block; font-size: 1.2rem; color: var(--md-default-fg-color); font-variant-numeric: tabular-nums; }
+.study-progress { padding: 1rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: .6rem; margin: 1.2rem 0; }
+.study-progress label { display: block; font-weight: 600; }
+.study-progress progress { width: 100%; height: .6rem; accent-color: var(--md-accent-fg-color); }
+.study-progress small { color: var(--md-default-fg-color--light); }
+.lesson-tools { display: flex; flex-wrap: wrap; align-items: center; gap: .75rem; padding: .7rem 0; margin: -.5rem 0 1.3rem; border-bottom: 1px solid var(--md-default-fg-color--lightest); font-size: .7rem; }
+.lesson-tools button { border: 1px solid var(--md-accent-fg-color); border-radius: .35rem; color: var(--md-accent-fg-color); padding: .3rem .65rem; cursor: pointer; font-weight: 600; }
+.lesson-tools button[aria-pressed="true"] { background: var(--md-accent-fg-color); color: var(--md-default-bg-color); }
+.lesson-status { color: var(--md-default-fg-color--light); }
+button:focus-visible, a:focus-visible, input:focus-visible { outline: 3px solid var(--md-accent-fg-color); outline-offset: 3px; }
+.md-typeset .course-cards { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: .8rem; margin: 1rem 0 2rem; }
+.md-typeset .course-card { display: block; padding: 1rem; border: 1px solid var(--md-default-fg-color--lightest); border-radius: .6rem; color: var(--md-default-fg-color); }
+.course-card:hover { border-color: var(--md-accent-fg-color); }
+.course-card .card-number { color: var(--md-accent-fg-color); font-size: .7rem; font-weight: 650; }
+.course-card .card-title { display: block; font-weight: 650; margin: .25rem 0; }
+.course-card .card-summary { display: block; color: var(--md-default-fg-color--light); font-size: .75rem; }
+.arithmatex { overflow-x: auto; }
+.course-diagram { overflow-x: auto; text-align: center; padding: 1rem 0; }
+.course-diagram svg { max-width: 100%; height: auto; }
+.diagram-fallback { text-align: left; white-space: pre; }
+.md-typeset .evidence-note { border-left: 3px solid var(--md-accent-fg-color); padding-left: .8rem; color: var(--md-default-fg-color--light); font-size: .75rem; }
+@media (max-width: 600px) { .md-typeset .course-cards { grid-template-columns: 1fr; } .md-typeset .hero { padding-top: .5rem; } }
+@media print { .lesson-tools, .study-progress, .course-actions { display: none; } }
