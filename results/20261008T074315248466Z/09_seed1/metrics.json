@@ -1,0 +1,33 @@
+{
+  "planning": {
+    "euclidean": {
+      "success_rate": 0.475,
+      "mean_steps": 24.0875
+    },
+    "learned_value": {
+      "success_rate": 1.0,
+      "mean_steps": 8.2125
+    },
+    "shortest_path_oracle": {
+      "success_rate": 1.0,
+      "mean_steps": 8.2125
+    }
+  },
+  "latent_prediction_training_mse": 0.2353445589542389,
+  "representation": {
+    "mean_feature_std": 3.1780946254730225,
+    "effective_rank": 2.188448190689087,
+    "latent_dim": 8
+  },
+  "goal_pairs": 80,
+  "status": "Educational adaptation: known-transition greedy planning, training-support states",
+  "not_reproduced": [
+    "image observations",
+    "random layouts",
+    "MPPI",
+    "quasimetric",
+    "paper benchmark"
+  ],
+  "wall_seconds": 0.7538189160000002,
+  "seed": 1
+}

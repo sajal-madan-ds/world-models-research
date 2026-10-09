@@ -1,0 +1,30 @@
+{
+  "latent_one_step_mse": 0.001280552358366549,
+  "latent_persistence_mse": 0.0009854065719991922,
+  "normalized_latent_mse": 0.14351846004729593,
+  "state_linear_probe_mse": 0.07853276666164441,
+  "state_mean_baseline_mse": 0.11042385548353195,
+  "representation": {
+    "mean_feature_std": 0.09200391918420792,
+    "effective_rank": 1.2981359958648682,
+    "latent_dim": 16
+  },
+  "mse_by_horizon": [
+    0.001298805815167725,
+    0.00349310040473938,
+    0.004483823664486408,
+    0.0067893136292696,
+    0.010677140206098557,
+    0.016894185915589333,
+    0.02366640605032444,
+    0.03034270741045475,
+    0.03806697949767113,
+    0.046992626041173935,
+    0.056809186935424805,
+    0.06959567219018936
+  ],
+  "jepa": false,
+  "limitations": "Two-frame CNN, no block masking; explicit VC regularizer; synthetic data",
+  "wall_seconds": 0.6458692080000219,
+  "seed": 0
+}

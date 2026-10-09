@@ -1,0 +1,111 @@
+site_name: World Models Course
+site_description: A progressive course from everyday intuition to JEPA, planning, and practical PyTorch research.
+site_author: Sajal Madan
+site_url: https://sajal-madan-ds.github.io/world-models-research/
+repo_url: https://github.com/sajal-madan-ds/world-models-research
+repo_name: View research repository
+edit_uri: edit/main/
+docs_dir: website/content
+site_dir: website/site
+hooks:
+  - website/hooks.py
+theme:
+  name: material
+  font: false
+  logo: assets/logo.svg
+  favicon: assets/logo.svg
+  icon:
+    repo: fontawesome/brands/github
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-night
+        name: Switch to dark theme
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: custom
+      accent: custom
+      toggle:
+        icon: material/weather-sunny
+        name: Switch to light theme
+  features:
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.sections
+    - navigation.footer
+    - navigation.top
+    - toc.follow
+    - search.highlight
+    - search.suggest
+    - content.code.copy
+plugins:
+  - search
+markdown_extensions:
+  - admonition
+  - attr_list
+  - md_in_html
+  - tables
+  - footnotes
+  - toc:
+      permalink: true
+  - pymdownx.details
+  - pymdownx.highlight:
+      anchor_linenums: true
+  - pymdownx.inlinehilite
+  - pymdownx.superfences:
+      custom_fences:
+        - name: mermaid
+          class: course-diagram
+          format: !!python/name:pymdownx.superfences.fence_code_format
+  - pymdownx.tasklist:
+      custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
+extra_css:
+  - assets/katex/katex.min.css
+  - assets/course.css
+extra_javascript:
+  - path: assets/runtime.js
+    type: module
+nav:
+  - Start here:
+      - Welcome: index.md
+      - Study plan: study-plan.md
+      - Measured experiments: measured.md
+      - Local setup: lab.md
+  - Course:
+      - Foundations:
+          - "01 · What is a world model?": docs/01_world_models_eli5.md
+          - "02 · Computer vision refresher": docs/02_opencv_foundations.md
+          - "03 · Representation learning": docs/03_representation_learning.md
+          - "04 · World-model taxonomy": docs/04_world_model_taxonomy.md
+      - Models and planning:
+          - "05 · History and architectures": docs/05_architectures.md
+          - "06 · JEPA deep dive": docs/06_jepa_deep_dive.md
+          - "07 · RL, physics, and planning": docs/07_rl_and_planning.md
+          - "08 · Models and datasets": docs/08_models_and_datasets.md
+      - Research practice:
+          - "09 · Training and evaluation": docs/09_training_and_inference.md
+          - "10 · Applications": docs/10_use_cases.md
+          - "11 · Research opportunities": docs/11_research_directions.md
+          - "12 · Twelve-week roadmap": docs/12_learning_roadmap.md
+  - Hands-on labs:
+      - Overview: labs.md
+      - "01 · Track motion": experiments/01_opencv_motion/README.md
+      - "02 · Bouncing ball": experiments/02_bouncing_ball/README.md
+      - "03 · Neural dynamics": experiments/03_neural_dynamics/README.md
+      - "04 · Latent world model": experiments/04_latent_world_model/README.md
+      - "05 · Mini-JEPA": experiments/05_mini_jepa/README.md
+      - "06 · Pretrained V-JEPA": experiments/06_vjepa_inference/README.md
+      - "07 · Model-based control": experiments/07_model_based_rl/README.md
+      - "08 · Action conditioning": experiments/08_action_conditioned_model/README.md
+      - "09 · Paper adaptation": experiments/09_research_replication/README.md
+  - Reference:
+      - Glossary and FAQ: docs/glossary.md
+      - Source index: docs/references.md
+      - Verification report: research/VERIFICATION.md
+      - Project progress: research/PROGRESS.md
+      - Research outline: research/OUTLINE.md

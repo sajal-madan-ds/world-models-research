@@ -1,0 +1,18 @@
+{
+  "args": {
+    "experiment": "all",
+    "seeds": [
+      0,
+      1,
+      2
+    ],
+    "steps": 250,
+    "device": "cpu",
+    "output": "results"
+  },
+  "torch": "2.8.0",
+  "numpy": "2.5.3",
+  "opencv": "4.14.0",
+  "platform": "macOS-26.6.2-arm64-arm-64bit",
+  "results_are": "small-scale educational measurements"
+}

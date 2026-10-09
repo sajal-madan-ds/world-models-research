@@ -1,0 +1,11 @@
+.venv/
+__pycache__/
+.pytest_cache/
+.ruff_cache/
+*.egg-info/
+.DS_Store
+website/.venv/
+website/node_modules/
+website/built/
+website/site/
+website/test-results/

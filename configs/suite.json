@@ -1,0 +1,6 @@
+{
+  "steps": 250,
+  "seeds": [0, 1, 2],
+  "device": "cpu",
+  "experiment": "all"
+}

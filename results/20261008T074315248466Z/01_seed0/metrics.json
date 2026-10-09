@@ -1,0 +1,16 @@
+{
+  "centroid_rmse_pixels": 0.0,
+  "mean_velocity_pixels_per_second": [
+    60.0,
+    0.0
+  ],
+  "lk_flow_pixels_per_frame": [
+    2.000056028366089,
+    -3.814697265625e-05
+  ],
+  "frames": 30,
+  "fps_assumed": 30,
+  "limitation": "Known color, single object, fixed camera, no occlusion",
+  "wall_seconds": 0.0025573339999027667,
+  "seed": 0
+}
